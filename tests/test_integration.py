@@ -43,7 +43,7 @@ def _run(guard, path="/", client=("127.0.0.1", 1234), headers=None):
             resp = await ac.get(path, headers=headers or {})
             return resp.status_code, dict(resp.headers)
 
-    return asyncio.get_event_loop().run_until_complete(_do())
+    return asyncio.run(_do())
 
 
 # --------------------------------------------------------------------------- #
