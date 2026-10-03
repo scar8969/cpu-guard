@@ -7,7 +7,6 @@ dist/
 build/
 .pytest_cache/
 .coverage
-*.png
 *.jpg
 *.gif
-dashboard.png
+!dashboard.png
